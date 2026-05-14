@@ -8,7 +8,8 @@ Built across the following modules. Read in roughly this order, though each is s
 
 - **`EM_Monetary_Policy_Notes.md`** — 5 core monetary policy concepts from first principles (output gap / slack, Phillips Curve, Taylor Rule, transmission mechanisms, FX pass-through). EM-specific nuance and misfit flags.
 - **`EM_Rates_Primer.md`** — yield curves, DV01, carry+rolldown, NDIRS/IRS/OIS, real vs nominal, cross-currency basis, NDF mechanics. First-principles teaching for FX traders moving into rates.
-- **`EM_Country_Framework.md`** — a 90-minute repeatable workflow for going from "country X" to "here's my view + trade + R:R." Includes 8-slide note structure and analysis worksheet.
+- **`EM_Country_Framework.md`** — a 90-minute repeatable workflow for going from "country X" to "here's my view + trade + R:R." Includes 8-slide note structure and analysis worksheet. (The longer exercise.)
+- **`EM_Markets_Exercise_Prep.md`** — fast-synthesis framework: digest an unfamiliar info dump in 30 min, present it in 10 with conviction. 30-min digestion process, 10-min presentation structure, templates by info-dump type, standing macro checklist, drills. (The shorter exercise.)
 - **`EM_Quick_Modeling.md`** — Excel + Python templates for fast on-the-fly modeling: Taylor calc, real rate panel, forward rates, time-series, carry+roll, pass-through regression, curve plots.
 - **`EM_Macro_Workbook.md`** — structured 2-day self-study workbook with timed blocks, quizzes, country case studies (Czech, Hungary, Colombia, Korea), and self-marked answer key.
 - **`EM_Trade_Pitch_Framework.md`** — turning a macro view into a tradeable expression. Integrates Willer (Tactical) / Booth (Strategic) / Jha (Rates) / Donnelly (FX execution & sizing) into a 5-step pitch build with adversarial stress-testing.

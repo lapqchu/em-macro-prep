@@ -1,0 +1,100 @@
+HOW TO PUSH THIS PACK TO YOUR GITHUB (Mac only — no phone needed)
+==================================================================
+
+The folder is already a git repository with one commit. You just need to point
+it at a new remote on GitHub and push.
+
+---------- FASTEST PATH: with `gh` (GitHub CLI) ----------
+
+If you have `gh` installed (check: run `which gh` in terminal):
+
+    cd "/Users/qq/Documents/Claude/Projects/HF interviews/em_macro_prep"
+    gh repo create em-macro-prep --private --source=. --remote=origin --push
+
+This single command creates the private repo on your GitHub AND pushes the
+current commit. Two commands total. If gh isn't authenticated, it'll prompt
+you (browser opens for device-flow login).
+
+If gh isn't installed:
+
+    brew install gh
+    gh auth login
+
+Then run the create command above.
+
+---------- ALTERNATIVE: plain `git` + browser ----------
+
+1. Open https://github.com/new in your Mac browser
+       Repository name:  em-macro-prep
+       Privacy:          PRIVATE
+       Initialise with:  nothing — leave all unchecked
+       Click "Create repository"
+
+2. In Terminal:
+
+       cd "/Users/qq/Documents/Claude/Projects/HF interviews/em_macro_prep"
+       git remote add origin https://github.com/lapqchu/em-macro-prep.git
+       git push -u origin main
+
+   When git prompts for credentials, use your GitHub username + a Personal
+   Access Token (Settings → Developer settings → Tokens → "Fine-grained
+   tokens", scope: contents read/write on this repo).
+   macOS Keychain will cache it for next time.
+
+---------- VERIFY ----------
+
+After push, verify:
+
+    git log --oneline   (should show your commit)
+    git remote -v       (should show your repo URL)
+
+Then visit https://github.com/lapqchu/em-macro-prep to confirm.
+
+---------- STEP 3: ACCESS FROM WORK ----------
+
+On your Barclays desk, in a browser:
+
+    https://github.com/lapqchu/em-macro-prep
+
+Sign in. The files render as Markdown directly in GitHub's web UI.
+
+To access them in raw form (faster reading, full screen):
+
+    https://raw.githubusercontent.com/lapqchu/em-macro-prep/main/EM_Macro_Workbook.md
+
+You can navigate file-by-file via GitHub's UI. Mobile-friendly too.
+
+---------- LAST RESORT: drag-and-drop via web UI ----------
+
+If both methods above fail for any reason:
+
+  1. Create the repo on github.com/new (private, empty)
+  2. Click "uploading an existing file"
+  3. Open Finder to:
+       /Users/qq/Documents/Claude/Projects/HF interviews/em_macro_prep/
+  4. Select all .md files + README.md (NOT the .git folder)
+  5. Drag into the browser
+  6. Commit message "Initial pack" → Commit
+
+---------- ALTERNATIVE: USE EXISTING em-macro-trader REPO ----------
+
+If you prefer adding to your existing skill repo as a sub-folder:
+
+    cd "/path/to/your/local/clone/of/em-macro-trader"
+    mkdir -p prep_notes
+    cp -r "/Users/qq/Documents/Claude/Projects/HF interviews/em_macro_prep/"*.md prep_notes/
+    git add prep_notes/
+    git commit -m "Add EM macro prep notes"
+    git push
+
+Note: that repo is public. Even sanitised, I'd suggest a fresh PRIVATE repo.
+
+---------- DONE ----------
+
+You should now be able to:
+  - Open https://github.com/lapqchu/em-macro-prep at your desk
+  - Read all 7 files in browser
+  - Edit annotations directly via GitHub web UI as you study
+  - Clone to any other machine if needed
+
+If anything breaks, the files are also still in this folder on your Mac.

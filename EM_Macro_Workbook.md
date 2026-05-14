@@ -6,17 +6,20 @@ date: "May 2026"
 
 # EM Macro Workbook — Two Days
 
-**How to use this.** You have two full work-day windows (Thu + Fri), ~4 hours of focused desk-time each, plus weekend mocks. This workbook is split into **eight 60-minute blocks** across two days. Each block is self-contained: read → quiz → drill → produce one written output.
+**How to use this.** Eight 60-minute blocks. Originally structured as two day-windows; if you're compressing into a single intensive day (~8 hrs), that works — just take a real break between Block 4 and Block 5, and don't skip Block 3 (rates primer) under any circumstances. Each block is self-contained: read → quiz → drill → produce one written output.
 
-**Working method.** Use a paper notebook or a digital sandbox file. Write your answers. Photograph or type up at end of each day. Send home → I review.
+**Working method.** Use a paper notebook or a digital sandbox file. Write your answers. Photograph or type up at end of the day. Send home → I review.
 
 **Companion files in same folder:**
 - `EM_Monetary_Policy_Notes.md` — the 5 concepts (theory)
 - `EM_Rates_Primer.md` — yield curve, DV01, carry+roll, NDIRS (CRITICAL for you as FX trader being tested on rates)
-- `EM_Country_Framework.md` — 90-min country recipe
+- `EM_Country_Framework.md` — 90-min country recipe (the longer exercise — country analysis from scratch)
+- `EM_Markets_Exercise_Prep.md` — fast-synthesis framework (the shorter exercise — digest material, present in 10 min)
 - `EM_Macro_Reference.md` — one-page summary
 - `EM_Quick_Modeling.md` — Excel + Python speed drills
 - `EM_Trade_Pitch_Framework.md` — turning a view into a trade with adversarial stress-testing
+
+**Note on the two exercises.** This workbook trains the **longer exercise** (country analysis from scratch). The **shorter exercise** (digest material → 10-min present) is trained separately via `EM_Markets_Exercise_Prep.md` — read it as a ~30-min warmup before Block 1 (it's light, mostly framework) and run its Drill 1 + Drill 2 each day. Both exercises share the same discipline: conclusion-first, interpret don't describe, always have a trade.
 
 **Country focus:**
 - **Day 1 (Thursday):** mini case study on **Czech (CZK)** — clean textbook fit, ideal first pass
